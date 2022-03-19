@@ -1,6 +1,6 @@
 <?php
-include "../config.php";
-include $WEB_ROOT . "/dbContext/dbContext.php";
+
+include $_SERVER['DOCUMENT_ROOT']. "/dbContext/dbContext.php";
 //查询（表，限制条数，页数，排序方式）
 //查询（表，id）
 //查询（查询目标表，限制条件表，id）

@@ -1,11 +1,10 @@
 <?php
 
-include "../config.php";
+
 function dbInit()
 {
-  global $WEB_ROOT;
-  header('Content-type:text/html;charset=utf8');
-  $configPath = $WEB_ROOT."/../settings.json";
+  header('Content-type:text/plain;charset=utf8');
+  $configPath = $_SERVER['DOCUMENT_ROOT']."/../settings.json";
   $config = json_decode(file_get_contents($configPath))->connConfig;
   $pdo = null;
   try {

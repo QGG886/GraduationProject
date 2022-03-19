@@ -1,7 +1,7 @@
 <?php
-include "../../config.php";
-include $WEB_ROOT."/models/models.php";
-include $WEB_ROOT."/services/repositoryService.php";
+
+include $_SERVER['DOCUMENT_ROOT']."/models/models.php";
+include $_SERVER['DOCUMENT_ROOT']."/services/repositoryService.php";
 
 $model = new AcademicConference();
 $model->Name=$_POST["name"];
